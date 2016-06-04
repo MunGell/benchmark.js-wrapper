@@ -1,0 +1,13 @@
+module.exports = {
+    benchmarkjs: {
+        version: '2.1.0'
+    },
+    requestOptions: {
+        'gzip': true,
+        'strictSSL': true
+    },
+    output: {
+        file: 'benchmark.js'
+    },
+    ga: 'UA-6065217-40'
+};
