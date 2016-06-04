@@ -22,7 +22,7 @@ gulp.task('js', function() {
 		'bestiejs/platform.js/1.3.1/platform.js',
 		`bestiejs/benchmark.js/${ BENCHMARKJS_VERSION }/benchmark.js`,
 		`bestiejs/benchmark.js/${ BENCHMARKJS_VERSION }/example/jsperf/ui.js`,
-		`bestiejs/benchmark.js/${ BENCHMARKJS_VERSION }/plugin/ui.browserscope.js`,
+		`bestiejs/benchmark.js/${ BENCHMARKJS_VERSION }/plugin/ui.browserscope.js`
 	], {
 			'base': 'https://raw.githubusercontent.com/',
 			'requestOptions': requestOptions
@@ -32,7 +32,7 @@ gulp.task('js', function() {
 	// Use whatever version of lodash Benchmark.js is using.
 	.pipe(addSrc.prepend(require.resolve('lodash')))
 
-	.pipe(concat('all.js'))
+	.pipe(concat('benchmark.js'))
 
 	// Set the Google Analytics ID.
 	.pipe(replace('gaId = \'\'', 'gaId = \'UA-6065217-40\''))
