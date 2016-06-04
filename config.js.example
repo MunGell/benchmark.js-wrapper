@@ -7,7 +7,9 @@ module.exports = {
         'strictSSL': true
     },
     output: {
-        file: 'benchmark.js'
+        file: 'benchmark.js',
+        minify: false
     },
+    ui: true,
     ga: 'UA-6065217-40'
 };
